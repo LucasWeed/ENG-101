@@ -21,4 +21,4 @@ time_to_cool = (log((temp_desired-temp_fridge)/(temp_current-temp_fridge))/-k); 
 %temp_fridge_all = temp_fridge_min: 1: temp_fridge_max % Whole number temperatures inside the fridge range
 
 %log((temp_desired - temp_fridge_all)*((temp_current - temp_fridge_all).^-1))*(-k.^-1)
-fprintf('Dude it''s going to take %g hours to chill the drinks, the party is going to be over by then!', time_to_cool)
+fprintf('Dude it''s going to take %g hours to chill the drinks, the party is going to be over by then!', time_to_cool) % Prints results as a string
