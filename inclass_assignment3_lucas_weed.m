@@ -45,8 +45,8 @@ p(5).Marker = '^'; % Line one has triangles
 % Label things
 title('Current running through R/L circuit'); % Graph title
 xlabel('Time (t) in seconds'); % X-axis label
-ylabel('Current [i(t)] in Amperes'); % Y axis label
-legend('4 Ohms', '3 Ohms', '2 Ohms', '1 Ohms', '0.5 Ohms', 'location', 'southeast');
+ylabel('i(t), Cuttent in Amperes'); % Y axis label
+legend('4 Ohms', '3 Ohms', '2 Ohms', '1 Ohms', '0.5 Ohms', 'location', 'southeast'); % Legend in bottom right corner
 
 
 %% Part 2 - COE Enrollment
@@ -56,16 +56,16 @@ clear all;
 % Enrollment for each major in the COE
 AE = 148; % Aerospace
 CHE = 56; % Chemical
-CE = 29;  % Civil
+CE  = 29; % Civil
 CPE = 73; % Computer
-EE = 30;  % Electrical
+EE  = 30; % Electrical
 ISE = 13; % Industrial Systems
 ME = 143; % Mechanical
-OPE = 4;  % Optics
+OPE =  4; % Optics
 UND = 50; % Undecided
 
 % Vectors for Pie chart
-Total_Enrollemt = [AE, CHE, CE, CPE, EE, ISE, ME, OPE, UND]; % Data points
+Total_Enrollemt = [AE, CHE, CE, CPE, EE, ISE, ME, OPE, UND]; % Vecor for data points
 labels = {'Aerospace', 'Chemical', 'Civil', 'Computer', 'Electrical', 'Industrial Systems', 'Mechanical', 'Optical', 'Undecided'}; % Labels
 
 % Plot
