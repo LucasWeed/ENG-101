@@ -14,6 +14,7 @@ temp_desired = input('In Fahrenheit, what temperature do you want your beer? ');
 k = 0.35; % Energy constant
 
 % Calculate ideal time it takes to cool the drink
+% dt is delta temp
 dt_desired = temp_desired - temp_fridge;        % Temp difference between final temp and fridge
 dt_current = temp_current - temp_fridge;        % Temp difference between current temp and fridge
 time_to_cool = (log(dt_desired/dt_current))/-k; % Newton's cooling equation solved for t

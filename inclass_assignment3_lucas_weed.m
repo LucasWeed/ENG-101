@@ -1,4 +1,4 @@
-%% In-class Assignment 2 - Heat Transfer Analysis
+%% In-class Assignment 3 - R/L Current (Inductive Circuit) and COE Enrollment
 % Lucas Weed
 % ENG 101-03
 % 01/29/2018
@@ -28,14 +28,14 @@ i5 = 10-2*(exp(-(R5/L)*time)); % Amperes when R = 0.5
 % Plotting
 p = plot(time, i1, time, i2, 'y', time, i3,  'g', time, i4, 'b', time, i5, 'm');
 
-% Make the graphs good looking colors
+% Make the lines good looking colors
 p(1).Color = '[.9, 0, 0]';  % Line one is red
 p(2).Color = '[1, .5, 0]';  % Line one is orange
 p(3).Color = '[1, .9, 0]';  % Line one is yellow
 p(4).Color = '[0, .75, 0]'; % Line one is green
 p(5).Color = '[0, 0, .75]'; % Line one is blue
 
-% Give the graphs different looking markers
+% Give the lines different looking markers
 p(1).Marker = 'o'; % Line one has circles
 p(2).Marker = '*'; % Line one has an asterisk
 p(3).Marker = 's'; % Line one has squares
@@ -47,8 +47,6 @@ title('Current running through R/L circuit'); % Graph title
 xlabel('Time (t) in seconds'); % X-axis label
 ylabel('i(t), Cuttent in Amperes'); % Y axis label
 legend('4 Ohms', '3 Ohms', '2 Ohms', '1 Ohms', '0.5 Ohms', 'location', 'southeast'); % Legend in bottom right corner
-
-
 %% Part 2 - COE Enrollment
 clc;
 clear all;
