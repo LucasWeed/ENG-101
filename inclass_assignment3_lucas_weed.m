@@ -26,21 +26,21 @@ i4 = 10-2*(exp(-(R4/L)*time)); % Amperes when R = 1
 i5 = 10-2*(exp(-(R5/L)*time)); % Amperes when R = 0.5
 
 % Plotting
-p = plot(time, i1, time, i2, 'y', time, i3,  'g', time, i4, 'b', time, i5, 'm');
+p = plot(time, i1, time, i2, time, i3, time, i4, time, i5);
 
 % Make the lines good looking colors
 p(1).Color = '[.9, 0, 0]';  % Line one is red
-p(2).Color = '[1, .5, 0]';  % Line one is orange
-p(3).Color = '[1, .9, 0]';  % Line one is yellow
-p(4).Color = '[0, .75, 0]'; % Line one is green
-p(5).Color = '[0, 0, .75]'; % Line one is blue
+p(2).Color = '[1, .5, 0]';  % Line two is orange
+p(3).Color = '[1, .9, 0]';  % Line three is yellow
+p(4).Color = '[0, .75, 0]'; % Line four is green
+p(5).Color = '[0, 0, .75]'; % Line five is blue
 
 % Give the lines different looking markers
 p(1).Marker = 'o'; % Line one has circles
-p(2).Marker = '*'; % Line one has an asterisk
-p(3).Marker = 's'; % Line one has squares
-p(4).Marker = '+'; % Line one has a plus sign
-p(5).Marker = '^'; % Line one has triangles
+p(2).Marker = '*'; % Line two has an asterisk
+p(3).Marker = 's'; % Line three has squares
+p(4).Marker = '+'; % Line four has a plus sign
+p(5).Marker = '^'; % Line five has triangles
 
 % Label things
 title('Current running through R/L circuit'); % Graph title
